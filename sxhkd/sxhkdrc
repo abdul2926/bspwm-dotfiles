@@ -1,0 +1,44 @@
+# --Keyboard config--
+# PRIMITIVE VERSION 
+
+# -WM independent config-
+super + Return
+	kitty
+super + b 
+	firefox
+super + a
+	cat /dev/null
+super + f
+	thunar
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# -bspwm specific config-
+super + shift + {q,r}
+	bspc {quit,wm -r}
+super + {_,shift + }x
+	bspc node -{c,k}
+super + m
+	bspc desktop -l next	
+super + g
+	bspc node -s biggest.window
+
+# -bspwm window states-
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# -bspwm focus/swap windows-
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# -bspwm desktops-
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f, node -d} "^{1-9,10}"
+
+# -bspwm move/resize window-
+super + alt {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0, top 0 20,bottom 0 -20,left 20 0}
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
