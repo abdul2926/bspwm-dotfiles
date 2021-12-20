@@ -15,4 +15,4 @@ bspc config border_width	1
 bspc config window_gap		15
 bspc config split_ratio		0.5
 bspc config normal_border_color \#564848
-bspc config focused_border_color \#E05151
+bspc config focused_border_color \#FE6E6E
