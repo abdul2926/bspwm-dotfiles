@@ -5,7 +5,7 @@
 super + Return
 	kitty
 super + b 
-	firefox
+	librewolf
 super + a
 	cat /dev/null
 super + f
