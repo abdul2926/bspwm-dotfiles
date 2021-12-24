@@ -1,18 +1,24 @@
-#! /bin/sh
+#!/bin/sh
 
-# Autostart
+# author: abdul2926
+
+# --Autostart--
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom &
-feh --bg-fill ~/Images/wallpaper.jpg &
 xinput set-prop 10 303 0 1 &
 xrandr --output DP-2 --mode 1920x1080 --rate 144.00 &
+vyprvpn c &
+feh --bg-fill ~/Images/Wallpapers/1123762.jpg & 
+picom &
 
-# Workspaces
-bspc monitor -d I II III IV V
+# --Workspaces--
+bspc monitor -d I II III IV V IV VII VIII
 
-# Appearance
-bspc config border_width	1
-bspc config window_gap		15
-bspc config split_ratio		0.5
-bspc config normal_border_color \#564848
-bspc config focused_border_color \#FE6E6E
+# --Appearance--
+bspc config border_width 0
+bspc config window_gap 15
+bspc config split_ratio 0.5
+
+# --Border--
+bspc config focused_border_color "#62468c"
+bspc config normal_border_color "#2e3136"
+bspc config border_width 2
