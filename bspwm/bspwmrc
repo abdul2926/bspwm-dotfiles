@@ -4,14 +4,12 @@
 
 # --Autostart--
 pgrep -x sxhkd > /dev/null || sxhkd &
-xinput set-prop 10 303 0 1 &
-xrandr --output DP-2 --mode 1920x1080 --rate 144.00 &
 vyprvpn c &
-feh --bg-fill ~/Images/Wallpapers/1123762.jpg & 
+feh --bg-fill ~/Images/Wallpapers/wp8635721-genshin-impact-fischl-wallpapers.jpg & 
 picom &
 
 # --Workspaces--
-bspc monitor -d I II III IV V IV VII VIII
+bspc monitor -d I II III IV V VI VII VIII IX X
 
 # --Appearance--
 bspc config border_width 0
