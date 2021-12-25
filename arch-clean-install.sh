@@ -41,6 +41,10 @@ cd ~/Downloads/
 git clone https://aur.archlinux.org/debtap.git
 cd debtap/
 yes | makepkg -si
+cd ~/Downloads/
+git clone https://aur.archlinux.org/pxplus-ibm-vga8.git
+cd pxplus-ibm-vga8/
+yes | makepkg -si
 
 # Install misc packages
 cd ~/Downloads/
