@@ -1,7 +1,6 @@
 # bspwm-dotfiles
 ---
 ### TODO: 
-- Create README.md
-- Bar config
+- update README.md
 - Rofi config
 - vim config

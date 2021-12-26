@@ -22,10 +22,14 @@ mkdir -p ~/.config/bspwm/
 mkdir -p ~/.config/sxhkd/
 mkdir -p ~/.config/picom/
 mkdir -p ~/.config/kitty/
+mkdir -p ~/.config/polybar/
 cp bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 cp sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 cp picom/picom.conf ~/.config/picom/picom.conf
 cp kitty/kitty.conf ~/.config/kitty/kitty.conf
+cp polybar/launch.sh ~/.config/polybar/launch.sh
+cp polybar/config.ini ~/.config/polybar/config.ini
+cp polybar/colors.ini ~/.config/polybar/colors.ini
 
 # Install pacman packages
 yes | pacman -Syyu
